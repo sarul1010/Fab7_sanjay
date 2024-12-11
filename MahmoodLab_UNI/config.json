@@ -1,5 +1,4 @@
 {
-  "model_type": "vit",
   "architecture": "vit_large_patch16_224",
   "patch_size": 16,
   "img_size": 224,
