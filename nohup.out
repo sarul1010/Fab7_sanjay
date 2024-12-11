@@ -1,0 +1,1178 @@
+[I 2024-11-19 05:51:31.485 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-11-19 05:51:31.492 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-11-19 05:51:31.499 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-11-19 05:51:31.504 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-11-19 05:51:31.507 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-11-19 05:51:33.512 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-11-19 05:51:33.513 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-11-19 05:51:33.513 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-11-19 05:51:33.784 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-11-19 05:51:33.785 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-11-19 05:51:33.785 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-11-19 05:51:33.785 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-11-19 05:51:33.786 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-11-19 05:51:33.786 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-11-19 05:51:33.788 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-11-19 05:51:33.788 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-11-19 05:51:33.789 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-11-19 05:51:33.789 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-11-19 05:51:33.790 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-11-19 05:51:33.790 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-11-19 05:51:33.795 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-11-19 05:51:33.886 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-11-19 05:51:33.886 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-11-19 05:51:33.886 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-11-19 05:51:33.887 ServerApp] http://asnpogflf7sixsenseinf01:9999/lab
+[I 2024-11-19 05:51:33.887 ServerApp]  or http://127.0.0.1:9999/lab
+[I 2024-11-19 05:51:33.887 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-11-19 05:51:41.436 ServerApp] 302 GET / (10.193.85.110) 0.59ms
+[I 2024-11-19 05:51:41.444 LabApp] 302 GET /lab? (10.193.85.110) 0.62ms
+[I 2024-11-19 05:51:49.782 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 174.11ms
+[W 2024-11-19 05:51:50.940 ServerApp] 404 GET /api/me?1731995510919 (10.193.85.110) 18.37ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:53.382 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-11-19 05:51:55.168 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7/payload-Copy1.json?content=0&1731995515123 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7/payload-Copy1.json'
+[W 2024-11-19 05:51:55.169 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7/payload-Copy1.json'"
+[W 2024-11-19 05:51:55.170 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7/payload-Copy1.json?content=0&1731995515123 (10.193.85.110) 27.41ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:55.189 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/invoke.py?content=0&1731995515123 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/invoke.py'
+[W 2024-11-19 05:51:55.189 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/invoke.py'"
+[W 2024-11-19 05:51:55.190 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/invoke.py?content=0&1731995515123 (10.193.85.110) 4.19ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:55.191 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/post_proc/post_process.py?content=0&1731995515124 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/post_proc/post_process.py'
+[W 2024-11-19 05:51:55.191 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/post_proc/post_process.py'"
+[W 2024-11-19 05:51:55.192 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/post_proc/post_process.py?content=0&1731995515124 (10.193.85.110) 5.31ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:55.193 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/post_proc/2stage_timm.py?content=0&1731995515124 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/post_proc/2stage_timm.py'
+[W 2024-11-19 05:51:55.194 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/post_proc/2stage_timm.py'"
+[W 2024-11-19 05:51:55.194 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/post_proc/2stage_timm.py?content=0&1731995515124 (10.193.85.110) 6.20ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:55.196 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/test.py?content=0&1731995515124 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/test.py'
+[W 2024-11-19 05:51:55.197 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/test.py'"
+[W 2024-11-19 05:51:55.197 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/test.py?content=0&1731995515124 (10.193.85.110) 2.63ms referer=http://localhost:9999/lab?
+[W 2024-11-19 05:51:55.819 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7?1731995515816 (10.193.85.110): file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7'
+[W 2024-11-19 05:51:55.820 ServerApp] wrote error: "file or directory does not exist: 'Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7'"
+[W 2024-11-19 05:51:55.820 ServerApp] 404 GET /api/contents/Client_Inference_Service/inference_container/generic_invocation/sample_files/FAB7?1731995515816 (10.193.85.110) 1.79ms referer=http://localhost:9999/lab?
+[I 2024-11-19 05:52:04.465 ServerApp] New terminal with automatic name: 1
+[I 2024-11-19 06:52:21.324 ServerApp] EOF on FD 20; stopping reading
+[I 2024-11-19 06:52:21.425 ServerApp] Terminal 1 closed
+[I 2024-11-20 02:00:31.945 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-11-20 02:00:31.950 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-11-20 02:00:31.955 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-11-20 02:00:31.958 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-11-20 02:00:31.961 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-11-20 02:00:32.785 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-11-20 02:00:32.785 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-11-20 02:00:32.785 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-11-20 02:00:32.843 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-11-20 02:00:32.844 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-11-20 02:00:32.844 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-11-20 02:00:32.844 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-11-20 02:00:32.844 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-11-20 02:00:32.844 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-11-20 02:00:32.845 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-11-20 02:00:32.845 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-11-20 02:00:32.845 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-11-20 02:00:32.846 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-11-20 02:00:32.846 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-11-20 02:00:32.846 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-11-20 02:00:32.851 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-11-20 02:00:32.867 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-11-20 02:00:32.868 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-11-20 02:00:32.868 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-11-20 02:00:32.868 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-11-20 02:00:32.868 ServerApp] http://asnpogflf7sixsenseinf01:10000/lab
+[I 2024-11-20 02:00:32.868 ServerApp]  or http://127.0.0.1:10000/lab
+[I 2024-11-20 02:00:32.868 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-11-20 02:00:43.198 ServerApp] 302 GET / (10.193.85.110) 0.49ms
+[I 2024-11-20 02:00:43.214 LabApp] 302 GET /lab? (10.193.85.110) 0.64ms
+[I 2024-11-20 02:00:50.048 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 43.92ms
+[W 2024-11-20 02:00:53.071 ServerApp] 404 GET /api/me?1732068053052 (10.193.85.110) 2.42ms referer=http://localhost:9999/lab?
+[W 2024-11-20 02:00:54.688 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-11-20 02:00:55.342 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1732068055319 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-11-20 02:00:55.343 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-11-20 02:00:55.343 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1732068055319 (10.193.85.110) 2.87ms referer=http://localhost:9999/lab?
+[W 2024-11-20 02:00:55.346 ServerApp] 404 GET /api/contents/Client_Training_Pipeline/training_container/timm_classification/timmloaders/triplet_loader.py?content=0&1732068055320 (10.193.85.110): file or directory does not exist: 'Client_Training_Pipeline/training_container/timm_classification/timmloaders/triplet_loader.py'
+[W 2024-11-20 02:00:55.347 ServerApp] wrote error: "file or directory does not exist: 'Client_Training_Pipeline/training_container/timm_classification/timmloaders/triplet_loader.py'"
+[W 2024-11-20 02:00:55.347 ServerApp] 404 GET /api/contents/Client_Training_Pipeline/training_container/timm_classification/timmloaders/triplet_loader.py?content=0&1732068055320 (10.193.85.110) 3.70ms referer=http://localhost:9999/lab?
+[W 2024-11-20 02:00:56.216 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1732068056189 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-11-20 02:00:56.216 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-11-20 02:00:56.217 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1732068056189 (10.193.85.110) 2.07ms referer=http://localhost:9999/lab?
+[I 2024-11-20 02:00:59.049 ServerApp] New terminal with automatic name: 1
+[I 2024-11-20 02:01:17.836 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 43.53ms
+[W 2024-11-20 02:01:18.923 ServerApp] 404 GET /api/me?1732068078904 (10.193.85.110) 2.16ms referer=http://localhost:9999/lab?
+[W 2024-11-20 02:01:20.377 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-11-20 03:00:59.084 ServerApp] EOF on FD 21; stopping reading
+[I 2024-11-20 03:00:59.185 ServerApp] Terminal 1 closed
+[C 2024-11-23 01:00:34.271 ServerApp] received signal 15, stopping
+[I 2024-11-23 01:00:34.274 ServerApp] Shutting down 6 extensions
+[C 2024-11-23 01:00:34.276 ServerApp] received signal 15, stopping
+[I 2024-11-23 01:00:34.290 ServerApp] Shutting down 0 terminals
+[I 2024-11-23 01:00:34.290 ServerApp] Shutting down 6 extensions
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-11-23 01:00:34.290 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-11-27 03:17:18.863 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-11-27 03:17:18.872 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-11-27 03:17:18.882 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-11-27 03:17:18.887 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-11-27 03:17:18.893 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-11-27 03:17:22.438 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-11-27 03:17:22.438 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-11-27 03:17:22.438 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-11-27 03:17:22.738 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-11-27 03:17:22.739 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-11-27 03:17:22.739 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-11-27 03:17:22.739 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-11-27 03:17:22.739 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-11-27 03:17:22.739 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-11-27 03:17:22.740 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-11-27 03:17:22.740 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-11-27 03:17:22.741 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-11-27 03:17:22.742 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-11-27 03:17:22.742 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-11-27 03:17:22.742 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-11-27 03:17:22.751 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-11-27 03:17:22.836 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-11-27 03:17:22.837 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-11-27 03:17:22.837 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-11-27 03:17:22.837 ServerApp] http://asnpogflf7sixsenseinf01:9999/lab
+[I 2024-11-27 03:17:22.837 ServerApp]  or http://127.0.0.1:9999/lab
+[I 2024-11-27 03:17:22.837 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-11-27 03:17:24.024 ServerApp] 302 GET / (10.193.85.110) 0.54ms
+[I 2024-11-27 03:17:24.035 LabApp] 302 GET /lab? (10.193.85.110) 0.68ms
+[I 2024-11-27 03:17:29.667 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 214.52ms
+[W 2024-11-27 03:17:34.607 ServerApp] 404 GET /api/me?1732677452899 (10.193.85.110) 25.80ms referer=http://localhost:9999/lab?
+[W 2024-11-27 03:17:36.796 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-11-27 03:17:38.772 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1732677458722 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-11-27 03:17:38.772 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-11-27 03:17:38.773 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1732677458722 (10.193.85.110) 30.72ms referer=http://localhost:9999/lab?
+[W 2024-11-27 03:17:38.774 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1732677458723 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-11-27 03:17:38.775 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-11-27 03:17:38.775 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1732677458723 (10.193.85.110) 32.41ms referer=http://localhost:9999/lab?
+[W 2024-11-27 03:17:39.418 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain03?1732677459416 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain03'
+[W 2024-11-27 03:17:39.418 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain03'"
+[W 2024-11-27 03:17:39.419 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain03?1732677459416 (10.193.85.110) 1.59ms referer=http://localhost:9999/lab?
+[C 2024-11-30 01:00:34.262 ServerApp] received signal 15, stopping
+[I 2024-11-30 01:00:34.264 ServerApp] Shutting down 6 extensions
+[I 2024-11-30 01:00:34.265 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-02 02:06:21.292 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-02 02:06:21.316 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-02 02:06:21.327 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-02 02:06:21.339 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-02 02:06:21.360 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-02 02:06:23.872 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-02 02:06:23.872 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-02 02:06:23.873 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-02 02:06:24.055 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-02 02:06:24.057 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-02 02:06:24.057 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-02 02:06:24.057 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-02 02:06:24.057 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-02 02:06:24.058 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-02 02:06:24.058 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-02 02:06:24.058 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-02 02:06:24.059 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-02 02:06:24.060 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-02 02:06:24.064 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-02 02:06:24.064 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-02 02:06:24.084 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-02 02:06:24.133 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-02 02:06:24.134 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-02 02:06:24.134 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-02 02:06:24.134 ServerApp] http://asnpogflf7sixsenseinf01:9999/lab
+[I 2024-12-02 02:06:24.134 ServerApp]  or http://127.0.0.1:9999/lab
+[I 2024-12-02 02:06:24.134 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-02 02:06:25.123 ServerApp] 302 GET / (10.193.85.110) 0.83ms
+[I 2024-12-02 02:06:25.136 LabApp] 302 GET /lab? (10.193.85.110) 1.01ms
+[W 2024-12-02 02:06:39.029 ServerApp] 401 POST /login?next=%2Flab%3F (10.193.85.110) 702.40ms referer=http://localhost:9999/login?next=%2Flab%3F
+[I 2024-12-02 02:06:46.121 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 692.95ms
+[W 2024-12-02 02:06:50.731 ServerApp] 404 GET /api/me?1733105209627 (10.193.85.110) 55.20ms referer=http://localhost:9999/lab?
+[W 2024-12-02 02:06:52.971 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-02 02:06:54.833 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733105214732 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-12-02 02:06:54.834 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-12-02 02:06:54.834 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733105214732 (10.193.85.110) 54.84ms referer=http://localhost:9999/lab?
+[W 2024-12-02 02:06:54.835 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733105214732 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-12-02 02:06:54.836 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-12-02 02:06:54.843 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733105214732 (10.193.85.110) 59.41ms referer=http://localhost:9999/lab?
+[I 2024-12-02 02:06:54.946 ServerApp] New terminal with automatic name: 1
+[W 2024-12-02 02:06:55.883 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733105215866 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-12-02 02:06:55.883 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-12-02 02:06:55.884 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733105215866 (10.193.85.110) 4.11ms referer=http://localhost:9999/lab?
+[I 2024-12-02 02:28:24.782 ServerApp] Saving file at /training_session_down.py
+[I 2024-12-02 02:30:24.857 ServerApp] Saving file at /training_session_down.py
+[I 2024-12-02 02:35:21.047 ServerApp] Saving file at /training_session_down.py
+[W 2024-12-02 02:37:12.701 ServerApp] delete /data
+[W 2024-12-02 02:37:12.701 ServerApp] Skipping trash for /efs/sanjay/data, on different device to home directory
+[W 2024-12-02 02:37:12.701 ServerApp] 400 DELETE /api/contents/data?1733107032712 (10.193.85.110): Directory /efs/sanjay/data not empty
+[W 2024-12-02 02:37:12.702 ServerApp] wrote error: 'Directory /efs/sanjay/data not empty'
+[W 2024-12-02 02:37:12.702 ServerApp] 400 DELETE /api/contents/data?1733107032712 (10.193.85.110) 2.97ms referer=http://localhost:9999/lab/tree/data/training_sessions/BEOL_FILM/images
+[I 2024-12-02 02:37:24.319 ServerApp] 302 GET / (10.193.85.110) 0.72ms
+[W 2024-12-02 02:37:26.562 ServerApp] 404 GET /api/me?1733107045888 (10.193.85.110) 658.78ms referer=http://localhost:9999/lab?
+[W 2024-12-02 02:37:28.832 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-02 02:37:36.091 ServerApp] delete /data
+[W 2024-12-02 02:37:36.092 ServerApp] Skipping trash for /efs/sanjay/data, on different device to home directory
+[W 2024-12-02 02:37:36.092 ServerApp] 400 DELETE /api/contents/data?1733107056103 (10.193.85.110): Directory /efs/sanjay/data not empty
+[W 2024-12-02 02:37:36.093 ServerApp] wrote error: 'Directory /efs/sanjay/data not empty'
+[W 2024-12-02 02:37:36.093 ServerApp] 400 DELETE /api/contents/data?1733107056103 (10.193.85.110) 3.09ms referer=http://localhost:9999/lab?
+[I 2024-12-02 02:38:01.278 ServerApp] Saving file at /training_session_down.py
+[W 2024-12-02 02:38:49.179 ServerApp] delete /data/training_sessions/BEOL_FILM
+[W 2024-12-02 02:38:49.180 ServerApp] Skipping trash for /efs/sanjay/data/training_sessions/BEOL_FILM, on different device to home directory
+[W 2024-12-02 02:38:49.180 ServerApp] 400 DELETE /api/contents/data/training_sessions/BEOL_FILM?1733107129191 (10.193.85.110): Directory /efs/sanjay/data/training_sessions/BEOL_FILM not empty
+[W 2024-12-02 02:38:49.180 ServerApp] wrote error: 'Directory /efs/sanjay/data/training_sessions/BEOL_FILM not empty'
+[W 2024-12-02 02:38:49.181 ServerApp] 400 DELETE /api/contents/data/training_sessions/BEOL_FILM?1733107129191 (10.193.85.110) 2.68ms referer=http://localhost:9999/lab/tree/data/training_sessions
+[W 2024-12-02 02:40:04.625 ServerApp] delete /data/training_sessions/BEOL_FILM
+[W 2024-12-02 02:40:04.626 ServerApp] Skipping trash for /efs/sanjay/data/training_sessions/BEOL_FILM, on different device to home directory
+[W 2024-12-02 02:40:04.627 ServerApp] 400 DELETE /api/contents/data/training_sessions/BEOL_FILM?1733107204636 (10.193.85.110): Directory /efs/sanjay/data/training_sessions/BEOL_FILM not empty
+[W 2024-12-02 02:40:04.627 ServerApp] wrote error: 'Directory /efs/sanjay/data/training_sessions/BEOL_FILM not empty'
+[W 2024-12-02 02:40:04.628 ServerApp] 400 DELETE /api/contents/data/training_sessions/BEOL_FILM?1733107204636 (10.193.85.110) 3.65ms referer=http://localhost:9999/lab/tree/data/training_sessions
+[I 2024-12-02 03:43:00.053 ServerApp] EOF on FD 22; stopping reading
+[I 2024-12-02 03:43:00.155 ServerApp] Terminal 1 closed
+[I 2024-12-02 04:42:49.122 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-02 04:42:49.134 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-02 04:42:49.153 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-02 04:42:49.171 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-02 04:42:49.177 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-02 04:42:51.313 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-02 04:42:51.313 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-02 04:42:51.313 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-02 04:42:51.461 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-02 04:42:51.462 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-02 04:42:51.462 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-02 04:42:51.462 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-02 04:42:51.463 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-02 04:42:51.463 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-02 04:42:51.463 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-02 04:42:51.463 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-02 04:42:51.463 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-02 04:42:51.464 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-02 04:42:51.465 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-02 04:42:51.465 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-02 04:42:51.484 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-02 04:42:51.531 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-02 04:42:51.531 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-02 04:42:51.532 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-02 04:42:51.532 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-02 04:42:51.532 ServerApp] http://asnpogflf7sixsenseinf01:10000/lab
+[I 2024-12-02 04:42:51.532 ServerApp]  or http://127.0.0.1:10000/lab
+[I 2024-12-02 04:42:51.532 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-02 04:42:56.041 ServerApp] 302 GET / (10.193.85.110) 0.99ms
+[I 2024-12-02 04:42:56.050 LabApp] 302 GET /lab? (10.193.85.110) 1.45ms
+[I 2024-12-02 04:43:03.403 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 226.27ms
+[W 2024-12-02 04:43:04.096 ServerApp] 404 GET /api/me?1733114584103 (10.193.85.110) 4.13ms referer=http://localhost:9999/lab?
+[W 2024-12-02 04:43:06.074 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-02 04:43:06.482 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733114586437 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-12-02 04:43:06.484 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-12-02 04:43:06.486 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733114586437 (10.193.85.110) 29.97ms referer=http://localhost:9999/lab?
+[I 2024-12-02 04:43:27.733 ServerApp] New terminal with automatic name: 1
+[W 2024-12-02 04:44:13.957 ServerApp] delete /data
+[W 2024-12-02 04:44:13.958 ServerApp] Skipping trash for /efs/sanjay/data, on different device to home directory
+[W 2024-12-02 04:44:13.958 ServerApp] 400 DELETE /api/contents/data?1733114653971 (10.193.85.110): Directory /efs/sanjay/data not empty
+[W 2024-12-02 04:44:13.958 ServerApp] wrote error: 'Directory /efs/sanjay/data not empty'
+[W 2024-12-02 04:44:13.959 ServerApp] 400 DELETE /api/contents/data?1733114653971 (10.193.85.110) 2.42ms referer=http://localhost:9999/lab/tree/training_session_down.py
+[I 2024-12-02 05:43:27.896 ServerApp] EOF on FD 23; stopping reading
+[I 2024-12-02 05:43:27.997 ServerApp] Terminal 1 closed
+[I 2024-12-02 07:25:28.556 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-02 07:25:28.561 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-02 07:25:28.567 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-02 07:25:28.571 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-02 07:25:28.574 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-02 07:25:29.742 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-02 07:25:29.742 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-02 07:25:29.742 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-02 07:25:29.850 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-02 07:25:29.852 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-02 07:25:29.852 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-02 07:25:29.852 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-02 07:25:29.853 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-02 07:25:29.853 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-02 07:25:29.853 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-02 07:25:29.853 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-02 07:25:29.854 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-02 07:25:29.855 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-02 07:25:29.856 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-02 07:25:29.856 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-02 07:25:29.864 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-02 07:25:29.893 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-02 07:25:29.893 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-02 07:25:29.893 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-02 07:25:29.894 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-02 07:25:29.894 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-02 07:25:29.894 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-02 07:25:29.894 ServerApp] http://asnpogflf7sixsenseinf01:10002/lab
+[I 2024-12-02 07:25:29.894 ServerApp]  or http://127.0.0.1:10002/lab
+[I 2024-12-02 07:25:29.894 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-02 07:25:46.862 ServerApp] 302 GET / (10.193.85.110) 0.77ms
+[I 2024-12-02 07:25:46.870 LabApp] 302 GET /lab? (10.193.85.110) 0.82ms
+[I 2024-12-02 07:25:53.848 ServerApp] 302 GET / (10.193.85.110) 0.79ms
+[I 2024-12-02 07:25:53.863 LabApp] 302 GET /lab? (10.193.85.110) 0.97ms
+[I 2024-12-02 07:26:01.327 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 97.44ms
+[W 2024-12-02 07:26:03.635 ServerApp] 404 GET /api/me?1733124363622 (10.193.85.110) 3.65ms referer=http://localhost:9999/lab?
+[W 2024-12-02 07:26:05.572 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-04 02:36:04.552 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-04 02:36:04.558 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-04 02:36:04.564 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-04 02:36:04.569 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-04 02:36:04.572 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-04 02:36:06.409 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-04 02:36:06.409 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-04 02:36:06.409 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-04 02:36:06.544 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-04 02:36:06.545 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-04 02:36:06.545 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-04 02:36:06.546 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-04 02:36:06.546 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-04 02:36:06.546 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-04 02:36:06.546 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-04 02:36:06.546 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-04 02:36:06.546 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-04 02:36:06.547 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-04 02:36:06.548 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-04 02:36:06.548 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-04 02:36:06.553 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-04 02:36:06.587 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-04 02:36:06.587 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-04 02:36:06.587 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-04 02:36:06.587 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-04 02:36:06.588 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-04 02:36:06.588 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-04 02:36:06.588 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-04 02:36:06.588 ServerApp] http://asnpogflf7sixsenseinf01:10003/lab
+[I 2024-12-04 02:36:06.588 ServerApp]  or http://127.0.0.1:10003/lab
+[I 2024-12-04 02:36:06.588 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-04 02:36:41.596 ServerApp] 302 GET / (10.193.85.110) 0.49ms
+[I 2024-12-04 02:36:41.611 LabApp] 302 GET /lab? (10.193.85.110) 0.63ms
+[I 2024-12-04 02:36:48.912 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 115.24ms
+[W 2024-12-04 02:36:51.382 ServerApp] 404 GET /api/me?1733279811373 (10.193.85.110) 3.27ms referer=http://localhost:9999/lab?
+[W 2024-12-04 02:36:53.312 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-04 02:36:53.724 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733279813710 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-12-04 02:36:53.724 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-12-04 02:36:53.725 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733279813710 (10.193.85.110) 2.77ms referer=http://localhost:9999/lab?
+[W 2024-12-04 02:36:53.735 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733279813710 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-12-04 02:36:53.736 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-12-04 02:36:53.736 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733279813710 (10.193.85.110) 3.50ms referer=http://localhost:9999/lab?
+[W 2024-12-04 02:36:53.739 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733279813710 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-04 02:36:53.740 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-04 02:36:53.740 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733279813710 (10.193.85.110) 2.85ms referer=http://localhost:9999/lab?
+[I 2024-12-04 02:41:43.662 ServerApp] New terminal with automatic name: 1
+[I 2024-12-04 04:57:20.479 ServerApp] EOF on FD 16; stopping reading
+[I 2024-12-04 04:57:20.580 ServerApp] Terminal 1 closed
+[I 2024-12-04 07:08:45.412 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-04 07:08:45.417 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-04 07:08:45.423 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-04 07:08:45.426 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-04 07:08:45.429 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-04 07:08:47.598 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-04 07:08:47.598 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-04 07:08:47.598 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-04 07:08:47.745 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-04 07:08:47.746 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-04 07:08:47.746 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-04 07:08:47.747 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-04 07:08:47.747 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-04 07:08:47.747 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-04 07:08:47.747 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-04 07:08:47.747 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-04 07:08:47.748 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-04 07:08:47.749 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-04 07:08:47.750 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-04 07:08:47.750 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-04 07:08:47.758 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-04 07:08:47.796 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-04 07:08:47.796 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-04 07:08:47.796 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-04 07:08:47.797 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-04 07:08:47.797 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-04 07:08:47.797 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-04 07:08:47.798 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-04 07:08:47.798 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-04 07:08:47.798 ServerApp] http://asnpogflf7sixsenseinf01:9954/lab
+[I 2024-12-04 07:08:47.798 ServerApp]  or http://127.0.0.1:9954/lab
+[I 2024-12-04 07:08:47.798 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-04 07:08:57.033 ServerApp] 302 GET / (10.193.85.110) 0.50ms
+[I 2024-12-04 07:08:57.037 LabApp] 302 GET /lab? (10.193.85.110) 0.54ms
+[I 2024-12-04 07:09:04.030 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 101.48ms
+[W 2024-12-04 07:09:06.122 ServerApp] 404 GET /api/me?1733296146127 (10.193.85.110) 3.57ms referer=http://localhost:9999/lab?
+[W 2024-12-04 07:09:07.784 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-04 07:09:08.090 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733296148099 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-04 07:09:08.091 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-04 07:09:08.091 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733296148099 (10.193.85.110) 3.36ms referer=http://localhost:9999/lab?
+[W 2024-12-04 07:09:08.706 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733296148719 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'
+[W 2024-12-04 07:09:08.706 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'"
+[W 2024-12-04 07:09:08.706 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733296148719 (10.193.85.110) 1.45ms referer=http://localhost:9999/lab?
+[I 2024-12-04 07:09:31.166 ServerApp] New terminal with automatic name: 1
+[I 2024-12-04 07:13:47.264 ServerApp] Creating new notebook in 
+[I 2024-12-04 07:13:47.715 ServerApp] Kernel started: 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: d10275e5-8e86-4816-85f9-91062d53e764
+[I 2024-12-04 07:15:47.596 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 07:17:47.658 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 07:19:47.724 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 08:09:31.229 ServerApp] EOF on FD 20; stopping reading
+[I 2024-12-04 08:09:31.329 ServerApp] Terminal 1 closed
+[I 2024-12-04 08:37:47.919 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 08:39:54.842 ServerApp] New terminal with automatic name: 1
+[I 2024-12-04 08:43:47.990 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 08:45:48.047 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-04 09:40:55.913 ServerApp] EOF on FD 16; stopping reading
+[I 2024-12-04 09:40:56.014 ServerApp] Terminal 1 closed
+[I 2024-12-04 11:53:04.787 ServerApp] Starting buffering for 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7:5d8add4d-20e5-4558-b4f5-8d5b4130e88c
+[I 2024-12-05 03:11:51.465 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-05 03:11:51.471 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-05 03:11:51.477 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-05 03:11:51.482 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-05 03:11:51.485 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-05 03:11:53.380 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-05 03:11:53.380 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-05 03:11:53.381 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-05 03:11:53.530 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-05 03:11:53.532 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-05 03:11:53.532 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-05 03:11:53.532 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-05 03:11:53.533 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-05 03:11:53.533 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-05 03:11:53.534 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-05 03:11:53.534 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-05 03:11:53.534 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-05 03:11:53.535 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-05 03:11:53.537 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-05 03:11:53.537 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-05 03:11:53.546 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-05 03:11:53.583 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-05 03:11:53.583 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-05 03:11:53.583 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-05 03:11:53.584 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-05 03:11:53.584 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-05 03:11:53.584 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-05 03:11:53.584 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-05 03:11:53.585 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-05 03:11:53.585 ServerApp] http://asnpogflf7sixsenseinf01:10090/lab
+[I 2024-12-05 03:11:53.585 ServerApp]  or http://127.0.0.1:10090/lab
+[I 2024-12-05 03:11:53.585 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-05 03:11:58.975 ServerApp] 302 GET / (10.193.85.110) 0.58ms
+[I 2024-12-05 03:11:58.988 LabApp] 302 GET /lab? (10.193.85.110) 0.58ms
+[I 2024-12-05 03:12:07.339 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 71.89ms
+[W 2024-12-05 03:12:09.280 ServerApp] 404 GET /api/me?1733368329285 (10.193.85.110) 3.71ms referer=http://localhost:9999/lab?
+[W 2024-12-05 03:12:11.239 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-05 03:12:11.730 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733368331705 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-05 03:12:11.730 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-05 03:12:11.731 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733368331705 (10.193.85.110) 2.71ms referer=http://localhost:9999/lab?
+[W 2024-12-05 03:12:12.431 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733368332444 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'
+[W 2024-12-05 03:12:12.431 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'"
+[W 2024-12-05 03:12:12.432 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733368332444 (10.193.85.110) 1.86ms referer=http://localhost:9999/lab?
+[I 2024-12-05 03:21:43.480 ServerApp] New terminal with automatic name: 1
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 547d4713-6b85-479f-8d37-87a6bed93b9b
+[I 2024-12-05 03:24:27.213 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:26:27.630 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:28:27.736 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:30:27.839 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:32:27.971 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:44:28.058 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:46:28.139 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:48:28.209 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:50:28.274 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:52:28.459 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 03:54:28.554 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 04:18:28.659 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 04:22:18.207 ServerApp] EOF on FD 17; stopping reading
+[I 2024-12-05 04:22:18.307 ServerApp] Terminal 1 closed
+[I 2024-12-05 04:22:28.842 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 04:26:29.516 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 05:51:16.646 ServerApp] Starting buffering for 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7:fac12a19-af5c-43d2-83ab-2d8c0d62d3d3
+[I 2024-12-05 06:59:49.736 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-05 06:59:49.741 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-05 06:59:49.747 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-05 06:59:49.750 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-05 06:59:49.753 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-05 06:59:51.514 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-05 06:59:51.514 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-05 06:59:51.514 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-05 06:59:51.641 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-05 06:59:51.642 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-05 06:59:51.642 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-05 06:59:51.642 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-05 06:59:51.642 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-05 06:59:51.642 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-05 06:59:51.642 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-05 06:59:51.643 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-05 06:59:51.643 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-05 06:59:51.644 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-05 06:59:51.645 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-05 06:59:51.645 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-05 06:59:51.650 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-05 06:59:51.679 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-05 06:59:51.679 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-05 06:59:51.679 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-05 06:59:51.679 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-05 06:59:51.680 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-05 06:59:51.680 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-05 06:59:51.680 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-05 06:59:51.680 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-05 06:59:51.680 ServerApp] http://asnpogflf7sixsenseinf01:10092/lab
+[I 2024-12-05 06:59:51.681 ServerApp]  or http://127.0.0.1:10092/lab
+[I 2024-12-05 06:59:51.681 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-05 06:59:52.671 ServerApp] 302 GET / (10.193.85.110) 0.54ms
+[I 2024-12-05 06:59:52.685 LabApp] 302 GET /lab? (10.193.85.110) 0.60ms
+[I 2024-12-05 07:00:03.796 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 120.97ms
+[W 2024-12-05 07:00:05.493 ServerApp] 404 GET /api/me?1733382005478 (10.193.85.110) 3.94ms referer=http://localhost:9999/lab?
+[W 2024-12-05 07:00:07.212 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-05 07:00:07.673 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733382007630 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-05 07:00:07.674 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-05 07:00:07.675 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733382007630 (10.193.85.110) 3.42ms referer=http://localhost:9999/lab?
+[W 2024-12-05 07:00:08.403 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733382008394 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'
+[W 2024-12-05 07:00:08.403 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/results/F7/exp_pretrain04'"
+[W 2024-12-05 07:00:08.404 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7/exp_pretrain04?1733382008394 (10.193.85.110) 2.70ms referer=http://localhost:9999/lab?
+[I 2024-12-05 07:07:40.610 ServerApp] New terminal with automatic name: 1
+[I 2024-12-05 08:26:10.431 ServerApp] Creating new directory in 
+[I 2024-12-05 08:37:55.060 ServerApp] EOF on FD 15; stopping reading
+[I 2024-12-05 08:37:55.161 ServerApp] Terminal 1 closed
+[W 2024-12-05 08:39:32.645 ServerApp] delete /Untitled Folder
+[W 2024-12-05 08:39:32.645 ServerApp] Skipping trash for /efs/sanjay/Untitled Folder, on different device to home directory
+[I 2024-12-05 08:39:35.429 ServerApp] New terminal with automatic name: 1
+[I 2024-12-05 08:53:53.284 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 08:55:53.359 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 08:57:53.425 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 08:59:53.493 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:01:53.564 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:03:53.640 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:05:53.711 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:07:53.790 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:09:53.866 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:11:53.948 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:19:54.040 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:21:54.124 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:33:54.230 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:35:54.306 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:39:58.600 ServerApp] EOF on FD 17; stopping reading
+[I 2024-12-05 09:39:58.700 ServerApp] Terminal 1 closed
+[I 2024-12-05 09:41:54.437 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 09:43:54.519 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-05 11:41:29.101 ServerApp] Starting buffering for 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7:72c4ea79-ec00-4534-a9c7-884ccab38317
+[I 2024-12-06 01:42:11.163 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-06 01:42:11.169 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-06 01:42:11.176 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-06 01:42:11.180 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-06 01:42:11.183 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-06 01:42:14.746 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-06 01:42:14.747 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-06 01:42:14.747 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-06 01:42:15.073 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-06 01:42:15.074 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-06 01:42:15.074 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-06 01:42:15.074 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-06 01:42:15.074 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-06 01:42:15.074 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-06 01:42:15.075 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-06 01:42:15.075 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-06 01:42:15.075 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-06 01:42:15.076 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-06 01:42:15.078 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-06 01:42:15.078 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-06 01:42:15.091 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-06 01:42:15.179 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-06 01:42:15.179 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-06 01:42:15.179 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-06 01:42:15.179 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-06 01:42:15.180 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-06 01:42:15.180 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-06 01:42:15.180 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-06 01:42:15.180 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-06 01:42:15.180 ServerApp] http://asnpogflf7sixsenseinf01:10100/lab
+[I 2024-12-06 01:42:15.180 ServerApp]  or http://127.0.0.1:10100/lab
+[I 2024-12-06 01:42:15.180 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-06 01:42:21.269 ServerApp] 302 GET / (10.193.85.110) 0.78ms
+[I 2024-12-06 01:42:21.276 LabApp] 302 GET /lab? (10.193.85.110) 0.57ms
+[I 2024-12-06 01:42:32.208 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 70.81ms
+[W 2024-12-06 01:42:34.091 ServerApp] 404 GET /api/me?1733449354082 (10.193.85.110) 7.59ms referer=http://localhost:9999/lab?
+[W 2024-12-06 01:42:36.306 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-06 01:42:36.698 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733449356712 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-06 01:42:36.698 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-06 01:42:36.699 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733449356712 (10.193.85.110) 3.18ms referer=http://localhost:9999/lab?
+[W 2024-12-06 01:42:36.701 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733449356712 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-12-06 01:42:36.701 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-12-06 01:42:36.702 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733449356712 (10.193.85.110) 1.87ms referer=http://localhost:9999/lab?
+[W 2024-12-06 01:42:37.444 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733449357456 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-12-06 01:42:37.444 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-12-06 01:42:37.446 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733449357456 (10.193.85.110) 3.39ms referer=http://localhost:9999/lab?
+[I 2024-12-06 01:45:53.437 ServerApp] Creating new directory in 
+[I 2024-12-06 01:46:11.229 ServerApp] Creating new directory in 
+[W 2024-12-06 01:46:30.812 ServerApp] delete /Untitled Folder 1
+[W 2024-12-06 01:46:30.812 ServerApp] Skipping trash for /efs/sanjay/Untitled Folder 1, on different device to home directory
+[I 2024-12-06 01:46:56.373 ServerApp] Uploading file to /MahmoodLab_UNI/config.json
+[I 2024-12-06 01:46:56.390 ServerApp] Uploading file to /MahmoodLab_UNI/gitattributes
+[I 2024-12-06 01:46:56.407 ServerApp] Uploading file to /MahmoodLab_UNI/README.md
+[I 2024-12-06 01:46:56.426 ServerApp] Uploading file to /MahmoodLab_UNI/requesting_access.png
+[I 2024-12-06 01:46:56.675 ServerApp] Uploading file to /MahmoodLab_UNI/uni.jpg
+[I 2024-12-06 01:46:56.795 ServerApp] Saving file at /MahmoodLab_UNI/uni.jpg
+[I 2024-12-06 01:47:04.926 ServerApp] Uploading file to /MahmoodLab_UNI/pytorch_model.bin
+[I 2024-12-06 01:49:19.778 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-06 01:50:46.475 ServerApp] Saving file at /MahmoodLab_UNI/pytorch_model.bin
+[I 2024-12-06 01:51:20.242 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-06 01:52:25.275 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-06 01:52:41.943 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-06 01:54:41.405 ServerApp] New terminal with automatic name: 1
+[I 2024-12-06 01:54:42.022 ServerApp] Saving file at /BEOL_CMP.ipynb
+[I 2024-12-06 01:55:43.191 ServerApp] Creating new file in 
+[I 2024-12-06 01:56:14.466 ServerApp] Starting buffering for 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7:3305de52-27ac-44aa-b802-355f51ca25cc
+[I 2024-12-06 01:56:25.267 ServerApp] Saving file at /untitled.py
+[I 2024-12-06 02:04:21.588 ServerApp] Saving file at /BEOL_CMP.ipynb
+[I 2024-12-06 02:10:26.257 ServerApp] Saving file at /BEOL_CMP.ipynb
+[I 2024-12-06 02:10:46.210 ServerApp] Kernel shutdown: 49d98fc6-a57a-4554-bf6a-f8b646e1b9a7
+[W 2024-12-06 02:10:47.049 ServerApp] delete /BEOL_CMP.ipynb
+[W 2024-12-06 02:10:47.050 ServerApp] Skipping trash for /efs/sanjay/BEOL_CMP.ipynb, on different device to home directory
+[I 2024-12-06 02:12:25.393 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 02:13:39.570 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 02:13:48.770 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 03:13:48.983 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 03:14:18.628 ServerApp] EOF on FD 17; stopping reading
+[I 2024-12-06 03:14:18.730 ServerApp] Terminal 1 closed
+[I 2024-12-06 06:47:47.396 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-06 06:47:47.401 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-06 06:47:47.407 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-06 06:47:47.411 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-06 06:47:47.414 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-06 06:47:48.798 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-06 06:47:48.798 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-06 06:47:48.798 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-06 06:47:48.911 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-06 06:47:48.912 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-06 06:47:48.912 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-06 06:47:48.912 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-06 06:47:48.912 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-06 06:47:48.912 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-06 06:47:48.913 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-06 06:47:48.913 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-06 06:47:48.913 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-06 06:47:48.914 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-06 06:47:48.915 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-06 06:47:48.915 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-06 06:47:48.920 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-06 06:47:48.952 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-06 06:47:48.952 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-06 06:47:48.952 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-06 06:47:48.952 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-06 06:47:48.953 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-06 06:47:48.953 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-06 06:47:48.953 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-06 06:47:48.953 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-06 06:47:48.953 ServerApp] http://asnpogflf7sixsenseinf01:9976/lab
+[I 2024-12-06 06:47:48.953 ServerApp]  or http://127.0.0.1:9976/lab
+[I 2024-12-06 06:47:48.953 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-06 06:48:02.854 ServerApp] 302 GET / (10.193.85.110) 0.50ms
+[I 2024-12-06 06:48:02.910 LabApp] 302 GET /lab? (10.193.85.110) 0.63ms
+[I 2024-12-06 06:48:09.960 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 40.76ms
+[W 2024-12-06 06:48:11.694 ServerApp] 404 GET /api/me?1733467691670 (10.193.85.110) 2.50ms referer=http://localhost:9999/lab?
+[W 2024-12-06 06:48:13.240 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-06 06:48:13.680 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733467693666 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-06 06:48:13.680 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-06 06:48:13.681 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733467693666 (10.193.85.110) 2.67ms referer=http://localhost:9999/lab?
+[W 2024-12-06 06:48:14.487 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7?1733467694469 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/results/F7'
+[W 2024-12-06 06:48:14.487 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/results/F7'"
+[W 2024-12-06 06:48:14.488 ServerApp] 404 GET /api/contents/train_scripts/notebooks/results/F7?1733467694469 (10.193.85.110) 1.67ms referer=http://localhost:9999/lab?
+[I 2024-12-06 06:48:19.571 ServerApp] New terminal with automatic name: 1
+[I 2024-12-06 06:50:21.808 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 06:52:21.871 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 06:54:21.932 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 06:56:21.999 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 07:42:40.118 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 07:48:19.610 ServerApp] EOF on FD 31; stopping reading
+[I 2024-12-06 07:48:19.710 ServerApp] Terminal 1 closed
+[I 2024-12-06 08:27:02.936 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-06 08:27:02.941 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-06 08:27:02.946 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-06 08:27:02.948 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-06 08:27:02.951 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-06 08:27:03.896 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-06 08:27:03.896 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-06 08:27:03.896 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-06 08:27:03.961 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-06 08:27:03.962 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-06 08:27:03.962 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-06 08:27:03.962 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-06 08:27:03.963 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-06 08:27:03.963 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-06 08:27:03.963 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-06 08:27:03.963 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-06 08:27:03.963 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-06 08:27:03.964 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-06 08:27:03.964 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-06 08:27:03.964 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-06 08:27:03.969 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-06 08:27:03.991 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-06 08:27:03.991 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-06 08:27:03.991 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-06 08:27:03.992 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-06 08:27:03.992 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-06 08:27:03.992 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-06 08:27:03.992 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-06 08:27:03.992 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-06 08:27:03.992 ServerApp] http://asnpogflf7sixsenseinf01:9961/lab
+[I 2024-12-06 08:27:03.992 ServerApp]  or http://127.0.0.1:9961/lab
+[I 2024-12-06 08:27:03.993 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-06 08:27:06.970 ServerApp] 302 GET / (10.193.85.110) 0.51ms
+[W 2024-12-06 08:27:08.292 ServerApp] 404 GET /api/me?1733473628286 (10.193.85.110) 3.12ms referer=http://localhost:9999/lab?
+[W 2024-12-06 08:27:09.988 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-06 08:45:14.158 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-06 09:28:17.479 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-06 09:28:17.484 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-06 09:28:17.489 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-06 09:28:17.491 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-06 09:28:17.494 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-06 09:28:18.362 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-06 09:28:18.362 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-06 09:28:18.363 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-06 09:28:18.428 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-06 09:28:18.429 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-06 09:28:18.429 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-06 09:28:18.429 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-06 09:28:18.429 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-06 09:28:18.429 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-06 09:28:18.429 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-06 09:28:18.429 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-06 09:28:18.430 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-06 09:28:18.430 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-06 09:28:18.431 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-06 09:28:18.431 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-06 09:28:18.436 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-06 09:28:18.457 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-06 09:28:18.457 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-06 09:28:18.458 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-06 09:28:18.458 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-06 09:28:18.458 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-06 09:28:18.458 ServerApp] The port 10003 is already in use, trying another port.
+[I 2024-12-06 09:28:18.458 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-06 09:28:18.459 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-06 09:28:18.459 ServerApp] http://asnpogflf7sixsenseinf01:9924/lab
+[I 2024-12-06 09:28:18.459 ServerApp]  or http://127.0.0.1:9924/lab
+[I 2024-12-06 09:28:18.459 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-06 09:28:25.908 ServerApp] 302 GET / (10.193.85.110) 0.49ms
+[W 2024-12-06 09:28:26.850 ServerApp] 404 GET /api/me?1733477306829 (10.193.85.110) 3.88ms referer=http://localhost:9999/lab?
+[W 2024-12-06 09:28:28.464 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-06 09:29:34.426 ServerApp] Saving file at /BEOL_CMP.py
+[C 2024-12-07 01:00:35.679 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.680 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.681 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.681 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.681 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.682 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.682 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.679 ServerApp] received signal 15, stopping
+[C 2024-12-07 01:00:35.683 ServerApp] received signal 15, stopping
+[I 2024-12-07 01:00:35.687 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.688 ServerApp] Shutting down 0 terminals
+[C 2024-12-07 01:00:35.687 ServerApp] received signal 15, stopping
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[C 2024-12-07 01:00:35.688 ServerApp] received signal 15, stopping
+[I 2024-12-07 01:00:35.691 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.692 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.694 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.695 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.696 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.697 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.699 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.700 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.701 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.704 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.705 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.711 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.732 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.711 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.735 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.712 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.741 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.712 ServerApp] Shutting down 6 extensions
+[I 2024-12-07 01:00:35.748 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-07 01:00:35.712 ServerApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2024-12-09 02:45:38.892 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-09 02:45:38.899 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-09 02:45:38.905 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-09 02:45:38.910 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-09 02:45:38.913 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-09 02:45:42.482 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-09 02:45:42.482 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-09 02:45:42.483 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-09 02:45:42.760 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-09 02:45:42.760 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-09 02:45:42.760 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-09 02:45:42.761 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-09 02:45:42.761 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-09 02:45:42.761 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-09 02:45:42.763 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-09 02:45:42.764 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-09 02:45:42.764 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-09 02:45:42.765 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-09 02:45:42.766 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-09 02:45:42.766 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-09 02:45:42.770 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-09 02:45:42.864 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-09 02:45:42.865 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-09 02:45:42.865 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-09 02:45:42.865 ServerApp] http://asnpogflf7sixsenseinf01:9999/lab
+[I 2024-12-09 02:45:42.865 ServerApp]  or http://127.0.0.1:9999/lab
+[I 2024-12-09 02:45:42.865 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-09 02:45:51.130 ServerApp] 302 GET / (10.193.85.110) 0.49ms
+[I 2024-12-09 02:45:51.139 LabApp] 302 GET /lab? (10.193.85.110) 0.52ms
+[I 2024-12-09 02:46:02.118 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 165.51ms
+[W 2024-12-09 02:46:08.630 ServerApp] 404 GET /api/me?1733712367169 (10.193.85.110) 17.65ms referer=http://localhost:9999/lab?
+[W 2024-12-09 02:46:10.234 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-09 02:46:12.046 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733712372008 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-09 02:46:12.047 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-09 02:46:12.047 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733712372008 (10.193.85.110) 26.23ms referer=http://localhost:9999/lab?
+[W 2024-12-09 02:46:12.048 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733712372008 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-12-09 02:46:12.049 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-12-09 02:46:12.049 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733712372008 (10.193.85.110) 27.08ms referer=http://localhost:9999/lab?
+[I 2024-12-09 02:46:12.132 ServerApp] New terminal with automatic name: 1
+[W 2024-12-09 02:46:12.862 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733712372868 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-12-09 02:46:12.862 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-12-09 02:46:12.863 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733712372868 (10.193.85.110) 1.12ms referer=http://localhost:9999/lab?
+[I 2024-12-09 03:46:12.173 ServerApp] EOF on FD 22; stopping reading
+[I 2024-12-09 03:46:12.274 ServerApp] Terminal 1 closed
+[I 2024-12-09 07:26:47.203 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-09 07:26:47.208 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-09 07:26:47.213 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-09 07:26:47.215 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-09 07:26:47.218 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-09 07:26:47.846 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-09 07:26:47.846 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-09 07:26:47.846 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-09 07:26:47.890 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-09 07:26:47.890 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-09 07:26:47.890 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-09 07:26:47.891 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-09 07:26:47.891 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-09 07:26:47.891 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-09 07:26:47.891 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-09 07:26:47.891 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-09 07:26:47.892 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-09 07:26:47.892 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-09 07:26:47.893 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-09 07:26:47.893 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-09 07:26:47.897 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-09 07:26:47.909 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-09 07:26:47.909 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-09 07:26:47.909 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-09 07:26:47.909 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-09 07:26:47.909 ServerApp] http://asnpogflf7sixsenseinf01:10000/lab
+[I 2024-12-09 07:26:47.909 ServerApp]  or http://127.0.0.1:10000/lab
+[I 2024-12-09 07:26:47.909 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-09 07:26:59.546 ServerApp] 302 GET / (10.193.85.110) 0.51ms
+[I 2024-12-09 07:26:59.561 LabApp] 302 GET /lab? (10.193.85.110) 0.50ms
+[I 2024-12-09 07:27:04.990 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 42.11ms
+[W 2024-12-09 07:27:07.157 ServerApp] 404 GET /api/me?1733729227158 (10.193.85.110) 4.12ms referer=http://localhost:9999/lab?
+[W 2024-12-09 07:27:08.678 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-09 07:27:09.096 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733729229089 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/training.ipynb'
+[W 2024-12-09 07:27:09.097 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/training.ipynb'"
+[W 2024-12-09 07:27:09.097 ServerApp] 404 GET /api/contents/train_scripts/notebooks/training.ipynb?content=0&1733729229089 (10.193.85.110) 1.77ms referer=http://localhost:9999/lab?
+[W 2024-12-09 07:27:09.937 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733729229942 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-12-09 07:27:09.937 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-12-09 07:27:09.938 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733729229942 (10.193.85.110) 1.38ms referer=http://localhost:9999/lab?
+[I 2024-12-09 08:29:06.009 ServerApp] New terminal with automatic name: 1
+[I 2024-12-09 08:34:35.700 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:35:17.396 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:35:19.321 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:39:19.391 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:41:19.461 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:41:24.683 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 08:44:48.724 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:00:48.814 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:01:38.875 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:07:52.309 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:09:52.404 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:10:00.997 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:13:46.695 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:16:28.839 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 09:27:04.487 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 10:08:24.226 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-09 10:27:31.046 ServerApp] EOF on FD 16; stopping reading
+[I 2024-12-09 10:27:31.146 ServerApp] Terminal 1 closed
+[I 2024-12-10 05:51:19.800 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-10 05:51:19.805 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-10 05:51:19.810 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-10 05:51:19.812 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-10 05:51:19.815 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-10 05:51:20.754 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-10 05:51:20.754 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-10 05:51:20.754 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-10 05:51:20.820 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-10 05:51:20.821 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-10 05:51:20.821 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-10 05:51:20.821 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-10 05:51:20.822 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-10 05:51:20.822 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-10 05:51:20.822 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-10 05:51:20.822 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-10 05:51:20.822 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-10 05:51:20.823 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-10 05:51:20.823 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-10 05:51:20.823 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-10 05:51:20.828 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-10 05:51:20.846 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-10 05:51:20.846 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-10 05:51:20.846 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-10 05:51:20.847 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-10 05:51:20.847 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-10 05:51:20.847 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-10 05:51:20.847 ServerApp] http://asnpogflf7sixsenseinf01:10002/lab
+[I 2024-12-10 05:51:20.847 ServerApp]  or http://127.0.0.1:10002/lab
+[I 2024-12-10 05:51:20.847 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-10 05:51:31.236 ServerApp] 302 GET / (10.193.85.110) 0.56ms
+[I 2024-12-10 05:51:31.278 LabApp] 302 GET /lab? (10.193.85.110) 0.61ms
+[I 2024-12-10 05:51:41.896 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 45.38ms
+[W 2024-12-10 05:51:57.557 ServerApp] 404 GET /api/me?1733809917550 (10.193.85.110) 2.61ms referer=http://localhost:9999/lab?
+[W 2024-12-10 05:51:59.116 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-10 05:51:59.764 ServerApp] New terminal with automatic name: 1
+[W 2024-12-10 06:51:17.032 ServerApp] 400 GET /api/contents/MahmoodLab_UNI/pytorch_model.bin?type=file&content=1&format=text&1733813475558 (10.193.85.110): /efs/sanjay/MahmoodLab_UNI/pytorch_model.bin is not UTF-8 encoded
+[W 2024-12-10 06:51:17.033 ServerApp] wrote error: '/efs/sanjay/MahmoodLab_UNI/pytorch_model.bin is not UTF-8 encoded'
+[W 2024-12-10 06:51:17.033 ServerApp] 400 GET /api/contents/MahmoodLab_UNI/pytorch_model.bin?type=file&content=1&format=text&1733813475558 (10.193.85.110) 1469.25ms referer=http://localhost:9999/lab/tree/MahmoodLab_UNI
+[I 2024-12-10 06:51:59.799 ServerApp] EOF on FD 19; stopping reading
+[I 2024-12-10 06:51:59.901 ServerApp] Terminal 1 closed
+[I 2024-12-10 07:16:00.455 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:18:00.558 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:18:38.584 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:18:42.274 ServerApp] New terminal with automatic name: 1
+[I 2024-12-10 07:19:13.116 ServerApp] New terminal with automatic name: 2
+[I 2024-12-10 07:28:11.077 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:32:11.167 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:32:27.357 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:34:27.422 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:34:41.269 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:38:10.389 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:40:24.260 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:42:27.378 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 07:50:39.890 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 08:00:27.651 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 08:03:42.077 ServerApp] Saving file at /BEOL_CMP.py
+[I 2024-12-10 08:18:50.592 ServerApp] EOF on FD 16; stopping reading
+[I 2024-12-10 08:18:50.693 ServerApp] Terminal 1 closed
+[I 2024-12-10 09:03:21.339 ServerApp] EOF on FD 18; stopping reading
+[I 2024-12-10 09:03:21.441 ServerApp] Terminal 2 closed
+[I 2024-12-11 02:51:23.653 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2024-12-11 02:51:23.658 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2024-12-11 02:51:23.664 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-11 02:51:23.666 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2024-12-11 02:51:23.669 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-11 02:51:24.555 ServerApp] jupyter_nbextensions_configurator | extension was found and enabled by notebook_shim. Consider moving the extension to Jupyter Server's extension paths.
+[I 2024-12-11 02:51:24.555 ServerApp] jupyter_nbextensions_configurator | extension was successfully linked.
+[I 2024-12-11 02:51:24.555 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-11 02:51:24.618 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-11 02:51:24.619 ServerApp] [jupyter_nbextensions_configurator] enabled 0.6.4
+[I 2024-12-11 02:51:24.619 ServerApp] jupyter_nbextensions_configurator | extension was successfully loaded.
+[I 2024-12-11 02:51:24.620 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2024-12-11 02:51:24.620 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /efs/sanjay
+[I 2024-12-11 02:51:24.620 FileIdExtension] ArbitraryFileIdManager : Configured database path: /root/.local/share/jupyter/file_id_manager.db
+[I 2024-12-11 02:51:24.620 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2024-12-11 02:51:24.620 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2024-12-11 02:51:24.620 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2024-12-11 02:51:24.621 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2024-12-11 02:51:24.622 LabApp] JupyterLab extension loaded from /efs/sourav/expfab7/lib/python3.7/site-packages/jupyterlab
+[I 2024-12-11 02:51:24.622 LabApp] JupyterLab application directory is /efs/sourav/expfab7/share/jupyter/lab
+[I 2024-12-11 02:51:24.627 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-11 02:51:24.644 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-11 02:51:24.645 ServerApp] The port 9999 is already in use, trying another port.
+[I 2024-12-11 02:51:24.645 ServerApp] The port 10000 is already in use, trying another port.
+[I 2024-12-11 02:51:24.645 ServerApp] The port 10001 is already in use, trying another port.
+[I 2024-12-11 02:51:24.645 ServerApp] The port 10002 is already in use, trying another port.
+[I 2024-12-11 02:51:24.646 ServerApp] Serving notebooks from local directory: /efs/sanjay
+[I 2024-12-11 02:51:24.646 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2024-12-11 02:51:24.646 ServerApp] http://asnpogflf7sixsenseinf01:10003/lab
+[I 2024-12-11 02:51:24.646 ServerApp]  or http://127.0.0.1:10003/lab
+[I 2024-12-11 02:51:24.646 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-11 02:51:46.773 ServerApp] 302 GET / (10.193.85.110) 0.53ms
+[I 2024-12-11 02:51:46.803 LabApp] 302 GET /lab? (10.193.85.110) 0.70ms
+[I 2024-12-11 02:51:55.977 ServerApp] 302 POST /login?next=%2Flab%3F (10.193.85.110) 45.14ms
+[W 2024-12-11 02:51:57.936 ServerApp] 404 GET /api/me?1733885517924 (10.193.85.110) 3.14ms referer=http://localhost:9999/lab?
+[W 2024-12-11 02:51:59.483 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-11 02:51:59.859 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733885519825 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'
+[W 2024-12-11 02:51:59.860 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/binrary_training.ipynb'"
+[W 2024-12-11 02:51:59.861 ServerApp] 404 GET /api/contents/train_scripts/notebooks/binrary_training.ipynb?content=0&1733885519825 (10.193.85.110) 6.61ms referer=http://localhost:9999/lab?
+[W 2024-12-11 02:51:59.861 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733885519826 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'
+[W 2024-12-11 02:51:59.862 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks/sixsense_training.ipynb'"
+[W 2024-12-11 02:51:59.862 ServerApp] 404 GET /api/contents/train_scripts/notebooks/sixsense_training.ipynb?content=0&1733885519826 (10.193.85.110) 7.24ms referer=http://localhost:9999/lab?
+[W 2024-12-11 02:52:00.592 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733885520583 (10.193.85.110): file or directory does not exist: 'train_scripts/notebooks'
+[W 2024-12-11 02:52:00.592 ServerApp] wrote error: "file or directory does not exist: 'train_scripts/notebooks'"
+[W 2024-12-11 02:52:00.593 ServerApp] 404 GET /api/contents/train_scripts/notebooks?1733885520583 (10.193.85.110) 1.37ms referer=http://localhost:9999/lab?
+[I 2024-12-11 02:58:35.165 ServerApp] New terminal with automatic name: 1
+[I 2024-12-11 04:26:30.322 ServerApp] EOF on FD 17; stopping reading
+[I 2024-12-11 04:26:30.423 ServerApp] Terminal 1 closed
+[I 2024-12-11 04:58:52.241 ServerApp] New terminal with automatic name: 1
+[W 2024-12-11 05:01:07.194 ServerApp] 400 GET /api/contents/MahmoodLab_UNI/pytorch_model.bin?type=file&content=1&format=text&1733893265674 (10.193.85.110): /efs/sanjay/MahmoodLab_UNI/pytorch_model.bin is not UTF-8 encoded
+[W 2024-12-11 05:01:07.195 ServerApp] wrote error: '/efs/sanjay/MahmoodLab_UNI/pytorch_model.bin is not UTF-8 encoded'
+[W 2024-12-11 05:01:07.195 ServerApp] 400 GET /api/contents/MahmoodLab_UNI/pytorch_model.bin?type=file&content=1&format=text&1733893265674 (10.193.85.110) 1513.24ms referer=http://localhost:9999/lab/tree/MahmoodLab_UNI
+[W 2024-12-11 05:05:25.173 ServerApp] delete /MahmoodLab_UNI/config.json
+[W 2024-12-11 05:05:25.174 ServerApp] Skipping trash for /efs/sanjay/MahmoodLab_UNI/config.json, on different device to home directory
+[I 2024-12-11 05:05:41.367 ServerApp] Uploading file to /MahmoodLab_UNI/config.json
