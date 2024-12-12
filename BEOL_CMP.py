@@ -62,9 +62,11 @@ class DefectDataset(torch.utils.data.Dataset):
 
 data_dir = "data/training_sessions/BEOL_CMP/images"
  
-# Define transformations
+# Define transformations to resize all images to a consistent size
 
 transform = transforms.Compose([
+
+    transforms.Resize((1440, 1440)),  # Resize to 1440x1440
 
     transforms.ToTensor()
 
@@ -104,8 +106,6 @@ class DefectClassifier(nn.Module):
  
     def forward(self, x):
 
-        # Resize input to match ConViT dimensions
-
         def resize_segment(segment):
 
             return F.interpolate(segment, size=(224, 224), mode='bilinear', align_corners=False)
@@ -127,8 +127,6 @@ class DefectClassifier(nn.Module):
         # Combine outputs
 
         if out1.argmax(1) == 0 and out2.argmax(1) == 0:  # No defect
-
-            # Process optional 7th segment
 
             optical_segment = resize_segment(x[:, :, 960:1440, :480])
 
