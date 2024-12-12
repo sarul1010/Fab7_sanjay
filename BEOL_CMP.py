@@ -2,29 +2,21 @@ import os
 
 import torch
 
+import timm
+
 import torch.nn as nn
 
-from transformers import AutoModelForImageClassification
+import torch.nn.functional as F
 
-from torch.utils.data import Dataset, DataLoader
+from torchvision import datasets, transforms
 
-from torchvision import transforms
+from torch.utils.data import DataLoader
 
 from PIL import Image
  
-# Path constants
+# Define dataset class to handle segmentation
 
-DATA_DIR = "data/training_sessions/BEOL_CMP/images"
-
-PRETRAINED_MODEL_DIR = "MahmoodLab_UNI"  # Path to your locally downloaded model directory
- 
-# Device configuration
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
- 
-# Dataset class
-
-class DefectDataset(Dataset):
+class DefectDataset(torch.utils.data.Dataset):
 
     def __init__(self, root_dir, transform=None):
 
@@ -32,176 +24,184 @@ class DefectDataset(Dataset):
 
         self.transform = transform
 
-        self.image_paths = []
+        self.classes = os.listdir(root_dir)
+
+        self.file_paths = []
 
         self.labels = []
-
-        self._prepare_data()
  
-    def _prepare_data(self):
+        for label, defect_class in enumerate(self.classes):
 
-        for label, folder in enumerate(os.listdir(self.root_dir)):
+            defect_dir = os.path.join(root_dir, defect_class)
 
-            folder_path = os.path.join(self.root_dir, folder)
+            for img_file in os.listdir(defect_dir):
 
-            if os.path.isdir(folder_path):
+                self.file_paths.append(os.path.join(defect_dir, img_file))
 
-                for image_file in os.listdir(folder_path):
-
-                    image_path = os.path.join(folder_path, image_file)
-
-                    self.image_paths.append(image_path)
-
-                    self.labels.append(label)
+                self.labels.append(label)
  
     def __len__(self):
 
-        return len(self.image_paths)
+        return len(self.file_paths)
  
     def __getitem__(self, idx):
 
-        image_path = self.image_paths[idx]
+        img_path = self.file_paths[idx]
 
         label = self.labels[idx]
 
-        image = Image.open(image_path).convert("L")  # Convert to grayscale
- 
-        # Split image into 6 segments
+        image = Image.open(img_path).convert('L')  # Load greyscale image
 
-        image = transforms.ToTensor()(image)
-
-        top_left = image[:, :480, :480]
-
-        top_middle = image[:, :480, 480:960]
-
-        top_right = image[:, :480, 960:]
-
-        bottom_left = image[:, 480:, :480]
-
-        bottom_middle = image[:, 480:, 480:960]
-
-        bottom_right = image[:, 480:, 960:]
- 
-        # For branch 1: first 4 segments
-
-        branch1_input = torch.cat((top_left, top_middle, bottom_left, bottom_middle), dim=0)
-
-        # For branch 2: last 2 segments
-
-        branch2_input = torch.cat((top_right, bottom_right), dim=0)
- 
         if self.transform:
 
-            branch1_input = self.transform(branch1_input)
+            image = self.transform(image)
 
-            branch2_input = self.transform(branch2_input)
+        return image, label
  
-        return branch1_input, branch2_input, label
+# Data directory
+
+data_dir = "data/training_sessions/BEOL_CMP/images"
  
-# Define the model
+# Define transformations
+
+transform = transforms.Compose([
+
+    transforms.ToTensor()
+
+])
+ 
+# Create dataset and dataloader
+
+dataset = DefectDataset(data_dir, transform=transform)
+
+dataloader = DataLoader(dataset, batch_size=16, shuffle=True, num_workers=4)
+ 
+# Define the model with two branches
 
 class DefectClassifier(nn.Module):
 
-    def __init__(self, pretrained_model_dir):
+    def __init__(self, pretrained_model):
 
         super(DefectClassifier, self).__init__()
+
+        self.branch1 = nn.Sequential(
+
+            pretrained_model,
+
+            nn.Linear(768, 2)  # Binary classification: defect or no defect
+
+        )
+
+        self.branch2 = nn.Sequential(
+
+            pretrained_model,
+
+            nn.Linear(768, 23)  # 23 defect labels
+
+        )
+
+        self.optical_classifier = nn.Linear(768, 2)  # Optical: visible or non-visible
  
-        # Load the pretrained model from local directory
+    def forward(self, x):
 
-        self.branch1 = AutoModelForImageClassification.from_pretrained(pretrained_model_dir, num_labels=1)  # Defect presence detection
+        # Resize input to match ConViT dimensions
 
-        self.branch2 = AutoModelForImageClassification.from_pretrained(pretrained_model_dir, num_labels=23)  # Defect type classification
+        def resize_segment(segment):
+
+            return F.interpolate(segment, size=(224, 224), mode='bilinear', align_corners=False)
  
-        # Final classifier to combine both branches' outputs
+        # Split input into segments
 
-        self.final_classifier = nn.Linear(24, 23)
+        first_4_segments = resize_segment(x[:, :, :960, :960])  # [N, C, 224, 224]
+
+        last_2_segments = resize_segment(x[:, :, :960, 960:1440])
  
-    def forward(self, branch1_input, branch2_input):
+        # Branch 1: Detect defects
 
-        # Extract features for both branches
-
-        branch1_features = self.branch1(branch1_input).logits
-
-        branch2_features = self.branch2(branch2_input).logits
+        out1 = self.branch1(first_4_segments)
  
-        # Concatenate outputs
+        # Branch 2: Classify defect type
 
-        combined_output = torch.cat((branch1_features, branch2_features), dim=1)
+        out2 = self.branch2(last_2_segments)
  
-        # Final output from combined branches
+        # Combine outputs
 
-        final_output = self.final_classifier(combined_output)
+        if out1.argmax(1) == 0 and out2.argmax(1) == 0:  # No defect
+
+            # Process optional 7th segment
+
+            optical_segment = resize_segment(x[:, :, 960:1440, :480])
+
+            optical_output = self.optical_classifier(optical_segment)
+
+            return optical_output
  
-        return final_output
+        return out1, out2
  
-# Main function
+# Load pretrained ConViT model
 
-def main():
+pretrained_model = timm.create_model('convit_base', pretrained=False)
 
-    # Transforms for data preprocessing
+state_dict = torch.load('./convit_base.fb_in1k/pytorch_model.bin', map_location=torch.device('cpu'))
 
-    transform = transforms.Compose([
-
-        transforms.Resize((224, 224)),  # Resize for pretrained model input
-
-        transforms.Normalize(mean=[0.5], std=[0.5])  # Normalize grayscale
-
-    ])
+pretrained_model.load_state_dict(state_dict)
  
-    # Prepare dataset and dataloaders
+# Initialize defect classifier model
 
-    dataset = DefectDataset(DATA_DIR, transform=transform)
+model = DefectClassifier(pretrained_model)
 
-    dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+model = model.to(device)
  
-    # Initialize model
+# Define loss and optimizer
 
-    model = DefectClassifier(PRETRAINED_MODEL_DIR)
+criterion = nn.CrossEntropyLoss()
 
-    model.to(device)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
  
-    # Loss and optimizer
+# Training loop
 
-    criterion = nn.CrossEntropyLoss()
+for epoch in range(10):  # Example: 10 epochs
 
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    model.train()
+
+    total_loss = 0
  
-    # Training loop
+    for images, labels in dataloader:
 
-    num_epochs = 10
-
-    for epoch in range(num_epochs):
-
-        model.train()
-
-        running_loss = 0.0
+        images, labels = images.to(device), labels.to(device)
  
-        for branch1_input, branch2_input, labels in dataloader:
+        # Forward pass
 
-            branch1_input, branch2_input, labels = branch1_input.to(device), branch2_input.to(device), labels.to(device)
+        outputs = model(images)
  
-            # Forward pass
+        if isinstance(outputs, tuple):
 
-            outputs = model(branch1_input, branch2_input)
- 
+            out1, out2 = outputs
+
+            loss1 = criterion(out1, labels)
+
+            loss2 = criterion(out2, labels)
+
+            loss = loss1 + loss2
+
+        else:
+
             loss = criterion(outputs, labels)
  
-            # Backward pass
+        # Backward pass
 
-            optimizer.zero_grad()
+        optimizer.zero_grad()
 
-            loss.backward()
+        loss.backward()
 
-            optimizer.step()
+        optimizer.step()
  
-            running_loss += loss.item()
+        total_loss += loss.item()
  
-        print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss / len(dataloader):.4f}")
+    print(f"Epoch [{epoch+1}/10], Loss: {total_loss:.4f}")
  
-    print("Training complete.")
- 
-if __name__ == "__main__":
-
-    main()
+print("Training complete!")
 
  
