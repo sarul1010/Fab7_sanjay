@@ -13,7 +13,11 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
 from PIL import Image
+
+# Enable cuDNN benchmarking for better performance
  
+torch.backends.cudnn.benchmark = True
+    
 # Define dataset class to handle segmentation
 
 class DefectDataset(torch.utils.data.Dataset):
@@ -24,7 +28,7 @@ class DefectDataset(torch.utils.data.Dataset):
 
         self.transform = transform
 
-        self.classes = os.listdir(root_dir)
+        self.classes = sorted(os.listdir(root_dir)) ##
 
         self.file_paths = []
 
@@ -50,7 +54,7 @@ class DefectDataset(torch.utils.data.Dataset):
 
         label = self.labels[idx]
 
-        image = Image.open(img_path).convert('L')  # Load greyscale image
+        image = Image.open(img_path).convert("RGB")  ## Load image
 
         if self.transform:
 
@@ -66,7 +70,7 @@ data_dir = "data/training_sessions/BEOL_CMP/images"
 
 transform = transforms.Compose([
 
-    transforms.Resize((1440, 1440)),  # Resize to 1440x1440
+    transforms.Resize((1440, 1440)),  ## Resize to 1440x1440
 
     transforms.ToTensor()
 
@@ -90,7 +94,7 @@ class DefectClassifier(nn.Module):
 
             pretrained_model,
 
-            nn.Linear(768, 2)  # Binary classification: defect or no defect
+            nn.Linear(1000, 2)  # Binary classification: defect or no defect
 
         )
 
@@ -98,11 +102,9 @@ class DefectClassifier(nn.Module):
 
             pretrained_model,
 
-            nn.Linear(768, 23)  # 23 defect labels
+            nn.Linear(1000, 23)  # 23 defect labels
 
         )
-
-        self.optical_classifier = nn.Linear(768, 2)  # Optical: visible or non-visible
  
     def forward(self, x):
 
@@ -124,21 +126,11 @@ class DefectClassifier(nn.Module):
 
         out2 = self.branch2(last_2_segments)
  
-        # Combine outputs
-
-        if out1.argmax(1) == 0 and out2.argmax(1) == 0:  # No defect
-
-            optical_segment = resize_segment(x[:, :, 960:1440, :480])
-
-            optical_output = self.optical_classifier(optical_segment)
-
-            return optical_output
- 
         return out1, out2
  
 # Load pretrained ConViT model
 
-pretrained_model = timm.create_model('convit_base', pretrained=False)
+pretrained_model = timm.create_model('convit_base', pretrained=False, num_classes=1000)
 
 state_dict = torch.load('./convit_base.fb_in1k/pytorch_model.bin', map_location=torch.device('cpu'))
 
@@ -174,26 +166,32 @@ for epoch in range(10):  # Example: 10 epochs
 
         outputs = model(images)
  
-        if isinstance(outputs, tuple):
+        #if isinstance(outputs, tuple):
 
-            out1, out2 = outputs
+        out1, out2 = outputs
+        
+        ## Check label ranges for branches
+        
+        defect_labels = (labels != 0).long()
+        
+        defect_type_labels = labels
 
-            loss1 = criterion(out1, labels)
+        loss1 = criterion(out1, defect_labels)
 
-            loss2 = criterion(out2, labels)
+        loss2 = criterion(out2, defect_type_labels)
+        
+        loss = loss1 + loss2
+         
+        #else:
 
-            loss = loss1 + loss2
-
-        else:
-
-            loss = criterion(outputs, labels)
+            #loss = criterion(outputs, labels)
  
         # Backward pass
 
         optimizer.zero_grad()
 
         loss.backward()
-
+            
         optimizer.step()
  
         total_loss += loss.item()
