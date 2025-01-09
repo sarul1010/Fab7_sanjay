@@ -57,7 +57,7 @@ class DefectDataset(torch.utils.data.Dataset):
         return image, label
  
 # Set up the data directory
-data_dir = "data/training_sessions/BEOL_CMP/images"
+data_dir = "data/training_sessions/BEOL_CMP_new_trng/images"
  
 # Define transformations to resize all images to a consistent size
 transform = transforms.Compose([
@@ -150,7 +150,7 @@ criterion2 = nn.CrossEntropyLoss()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
  
 # Training loop
-num_epochs = 80
+num_epochs = 90
 for epoch in range(num_epochs):
     # Training phase
     model.train()
@@ -254,125 +254,6 @@ test_accuracy_branch1 = test_correct_branch1 / test_samples * 100
 test_accuracy_branch2 = test_correct_branch2 / test_samples * 100
 print(f"Test Results - Loss: {test_avg_loss:.4f}, Branch 1 Acc: {test_accuracy_branch1:.2f}%, Branch 2 Acc: {test_accuracy_branch2:.2f}%")
 
-# Add accuracy calculation and confusion matrix for the entire training dataset
-
-# Define function to calculate accuracy and confusion matrix for a DataLoader
-
-def evaluate_model_on_dataset(model, dataloader, device):
-
-    model.eval()
-
-    all_labels = []
-
-    all_preds_branch1 = []
-
-    all_preds_branch2 = []
- 
-    with torch.no_grad():
-
-        for images, labels in dataloader:
-
-            images, labels = images.to(device), labels.to(device)
-
-            out1, out2 = model(images)
- 
-            defect_labels = (labels != 0).long()
-
-            defect_labels = F.one_hot(defect_labels, num_classes=2).float()
- 
-            _, pred_branch1 = torch.max(out1, 1)
-
-            _, pred_branch2 = torch.max(out2, 1)
- 
-            all_labels.extend(labels.cpu().numpy())
-
-            all_preds_branch1.extend(pred_branch1.cpu().numpy())
-
-            all_preds_branch2.extend(pred_branch2.cpu().numpy())
- 
-    return all_labels, all_preds_branch1, all_preds_branch2
- 
-# Evaluate on the training dataset
-
-train_labels, train_preds_branch1, train_preds_branch2 = evaluate_model_on_dataset(model, train_loader, device)
- 
-# Calculate accuracy for the entire training dataset
-
-train_accuracy_branch1 = np.mean(np.array(train_preds_branch1) == np.array((np.array(train_labels) != 0).astype(int))) * 100
-
-train_accuracy_branch2 = np.mean(np.array(train_preds_branch2) == np.array(train_labels)) * 100
- 
-print(f"Training Accuracy - Branch 1 (Binary): {train_accuracy_branch1:.2f}%, Branch 2 (Multi-class): {train_accuracy_branch2:.2f}%")
- 
-# Generate confusion matrix for branch 2 (multi-class classification)
-
-cm = confusion_matrix(train_labels, train_preds_branch2, labels=list(range(23)))
-
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=dataset.classes)
-
-disp.plot(cmap=plt.cm.Blues, xticks_rotation='vertical')
-
-plt.title("Confusion Matrix - Training Set")
-
-plt.savefig("confusion_matrix.png")
-
-plt.show()
- 
-# Visualize heatmaps for several misclassified images
-
-def visualize_heatmaps(model, dataloader, device):
-
-    model.eval()
-
-    misclassified_images = []
-
-    misclassified_preds = []
-
-    misclassified_labels = []
- 
-    # Identify misclassified samples
-
-    with torch.no_grad():
-
-        for images, labels in dataloader:
-
-            images, labels = images.to(device), labels.to(device)
-
-            out1, out2 = model(images)
- 
-            _, pred_branch2 = torch.max(out2, 1)
- 
-            for i in range(len(labels)):
-
-                if pred_branch2[i] != labels[i]:
-
-                    misclassified_images.append(images[i].cpu())
-
-                    misclassified_preds.append(pred_branch2[i].item())
-
-                    misclassified_labels.append(labels[i].item())
- 
-    # Visualize heatmaps for the first few misclassified samples
-
-    for i in range(min(5, len(misclassified_images))):
-
-        img = misclassified_images[i].permute(1, 2, 0).numpy()
-
-        plt.imshow(img)
-
-        plt.title(f"True: {misclassified_labels[i]}, Pred: {misclassified_preds[i]}")
-
-        plt.axis("off")
-
-        plt.savefig(f"misclassified_image_{i}.png")
-
-        plt.show()
- 
-# Visualize heatmaps for misclassified training samples
-
-visualize_heatmaps(model, train_loader, device)
-
 # Save the trained model
 torch.save(model.state_dict(), "model_new.pth")
 print("Model saved to 'model_new.pth'.")
- 
